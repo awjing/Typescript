@@ -1,0 +1,23 @@
+// 数组
+const arr: (number | string)[] = [1, 2, 3]
+const strArr: string[] = ['a', 'b', 'c']
+const undefinedArr: undefined[] = [undefined]
+
+
+// type alias 类型别名
+type User = { name: string, age: number }
+
+class Teacher {
+  name: string;
+  age: number;
+}
+const objectArr: User[] = [
+  new Teacher(),
+  {
+    name: 'wj',
+    age: 28
+  }
+]
+
+// 元组 tuple
+const teacherInfo: [string, string, number] = ['WJ', 'girl', 18]
